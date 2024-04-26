@@ -21,6 +21,7 @@ pkgs.mkShellNoCC {
   # which can be coerced to a string will end up as an environment variable.
   GREETING = "Hello, fellow Nix adventurer!";
 
+  # To run commands before entering the shell environment, place them in the shellHook attribute.
   shellHook = ''
     echo $GREETING | cowsay | lolcat
   '';
