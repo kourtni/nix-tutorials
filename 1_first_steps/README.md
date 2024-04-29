@@ -11,12 +11,21 @@ Shows how to immediately use programs packaged with Nix by using the command lin
 ## Reproducible interpreted scripts
 https://nix.dev/tutorials/first-steps/reproducible-scripts
 
-Shows how to use Nix to create and run a shebang script ([nixpkgs-releases.sh](nixpkgs-releases.sh)) to configure a temporary shell that exists only for the duration of time that the script is running, and in which commands are imperatively executed within that shell.
+Shows how to use Nix to create and run a shebang script ([nixpkgs-releases.sh](nixpkgs-releases.sh))
+to configure a temporary shell that exists only for the duration of time that the script is running,
+and in which commands are imperatively executed within that shell.
 
-Options like `--pure` can be used to additionally isolate the temporary shell from programs that might exist on the machine the script is running.
+Options like `--pure` can be used to additionally isolate the temporary shell from programs that
+might exist on the machine the script is running.
 
 ## Declarative shell environments with shell.nix
 https://nix.dev/tutorials/first-steps/declarative-shell
 
-Shows how to create and use a Nix file ([shell.nix](shell.nix)) to declaratively configure reproducible shell environments. The major benefit of this is that the created file can be shared and used to create the same environment on different machines.
+Shows how to create and use a Nix file ([shell.nix](shell.nix)) to declaratively configure
+reproducible shell environments.
 
+## Towards reproducibility: pinning Nixpkgs
+https://nix.dev/tutorials/first-steps/towards-reproducibility-pinning-nixpkgs
+
+Discusses the implications on reproducibility of various methods that can be used to determine the
+version of Nixpkgs that a Nix expression will be based upon.
